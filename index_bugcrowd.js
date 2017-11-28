@@ -140,6 +140,7 @@ const pipeline = async () => {
     newElem.description = infos.description;
     newElem.effectif = infos.effectif;
     newElem.creation = infos.creation;
+    newElem.bourse = infos.bourse;
     if (url.match(/bugcrowd\.com/)) {
       const { domains, description } = await getCompanyDomainBugCrowd(url);
       newElem.domains = domains;
